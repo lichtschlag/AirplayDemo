@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1BB674D114CE963600F53A7A /* AirplayDemo Config.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 1BB674D014CE963600F53A7A /* AirplayDemo Config.xcconfig */; };
 		1BB674D414CE985400F53A7A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1BB674D314CE985400F53A7A /* README.md */; };
 		1BFAE16B14CD44F200F7D73F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFAE16A14CD44F200F7D73F /* UIKit.framework */; };
 		1BFAE16D14CD44F200F7D73F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BFAE16C14CD44F200F7D73F /* Foundation.framework */; };
@@ -20,7 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1BB674D014CE963600F53A7A /* AirplayDemo Config.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "AirplayDemo Config.xcconfig"; sourceTree = "<group>"; };
 		1BB674D314CE985400F53A7A /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1BFAE16614CD44F200F7D73F /* AirplayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirplayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BFAE16A14CD44F200F7D73F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -56,7 +54,6 @@
 			isa = PBXGroup;
 			children = (
 				1BB674D314CE985400F53A7A /* README.md */,
-				1BB674D014CE963600F53A7A /* AirplayDemo Config.xcconfig */,
 				1BFAE17014CD44F200F7D73F /* AirplayDemo */,
 				1BFAE16914CD44F200F7D73F /* Frameworks */,
 				1BFAE16714CD44F200F7D73F /* Products */,
@@ -147,7 +144,7 @@
 		1BFAE15D14CD44F100F7D73F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0420;
+				LastUpgradeCheck = 0440;
 			};
 			buildConfigurationList = 1BFAE16014CD44F100F7D73F /* Build configuration list for PBXProject "AirplayDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -172,7 +169,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BFAE17514CD44F200F7D73F /* InfoPlist.strings in Resources */,
-				1BB674D114CE963600F53A7A /* AirplayDemo Config.xcconfig in Resources */,
 				1BB674D414CE985400F53A7A /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -206,11 +202,10 @@
 /* Begin XCBuildConfiguration section */
 		1BFAE18614CD44F200F7D73F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BB674D014CE963600F53A7A /* AirplayDemo Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leonhard Lichtschlag (6F4ZV4635Y)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -225,17 +220,17 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D6FCA5A8-9256-4279-8F9E-B2A91981CFA7";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
 		1BFAE18714CD44F200F7D73F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BB674D014CE963600F53A7A /* AirplayDemo Config.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leonhard Lichtschlag (6F4ZV4635Y)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -244,6 +239,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D6FCA5A8-9256-4279-8F9E-B2A91981CFA7";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -255,7 +251,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirplayDemo/AirplayDemo-Prefix.pch";
 				INFOPLIST_FILE = "AirplayDemo/AirplayDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -266,7 +264,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirplayDemo/AirplayDemo-Prefix.pch";
 				INFOPLIST_FILE = "AirplayDemo/AirplayDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
