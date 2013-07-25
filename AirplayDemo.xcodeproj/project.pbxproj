@@ -24,6 +24,7 @@
 		3F519F241517930C00278CD0 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F519F1C1517930C00278CD0 /* Icon.png */; };
 		3F519F251517930C00278CD0 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F519F1D1517930C00278CD0 /* Icon@2x.png */; };
 		3F519F261517930C00278CD0 /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F519F1E1517930C00278CD0 /* iTunesArtwork.png */; };
+		3FEE859517A1533A00A9CCD7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FEE859417A1533A00A9CCD7 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		3F519F1C1517930C00278CD0 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		3F519F1D1517930C00278CD0 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		3F519F1E1517930C00278CD0 /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		3FEE859417A1533A00A9CCD7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				1BFAE17D14CD44F200F7D73F /* Classes */,
 				1BFAE17114CD44F200F7D73F /* Supporting Files */,
 				3F519F161517930C00278CD0 /* Icons */,
+				3FEE859417A1533A00A9CCD7 /* Default-568h@2x.png */,
 			);
 			path = AirplayDemo;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1BFAE17514CD44F200F7D73F /* InfoPlist.strings in Resources */,
+				3FEE859517A1533A00A9CCD7 /* Default-568h@2x.png in Resources */,
 				1BB674D414CE985400F53A7A /* README.md in Resources */,
 				3F519F1F1517930C00278CD0 /* Icon-72.png in Resources */,
 				3F519F201517930C00278CD0 /* Icon-72@2x.png in Resources */,
@@ -245,7 +249,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leonhard Lichtschlag (6F4ZV4635Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -260,7 +264,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D6FCA5A8-9256-4279-8F9E-B2A91981CFA7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -270,7 +274,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Leonhard Lichtschlag (6F4ZV4635Y)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -279,7 +283,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D6FCA5A8-9256-4279-8F9E-B2A91981CFA7";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -291,7 +295,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirplayDemo/AirplayDemo-Prefix.pch";
 				INFOPLIST_FILE = "AirplayDemo/AirplayDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
@@ -304,7 +308,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AirplayDemo/AirplayDemo-Prefix.pch";
 				INFOPLIST_FILE = "AirplayDemo/AirplayDemo-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
